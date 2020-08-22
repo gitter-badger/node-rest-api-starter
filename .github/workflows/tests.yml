@@ -46,7 +46,7 @@ jobs:
       - name: Get repo secrets into environment file
         run: |
           touch .env
-          echo "${{ SECRETS.ENV_VARS }}" >> .env
+          echo "${{ SECRETS.ENV_VARS_LOCALHOST }}" >> .env
 
       - run: npm ci
 
